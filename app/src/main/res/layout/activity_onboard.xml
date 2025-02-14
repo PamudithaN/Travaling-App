@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="32dp">
+
+    <!-- Image or Icon for Onboarding -->
+
+    <!-- Title for the Onboarding Screen -->
+
+    <TextView
+        android:id="@+id/onboardingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome to the Tourist Guide App!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- Description for the Onboarding Screen -->
+    <TextView
+        android:id="@+id/onboardingDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/onboardingTitle"
+        android:layout_marginBottom="32dp"
+        android:text="Discover exciting places, find travel guides, and make your journey unforgettable."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <!-- Get Started Button -->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/on" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/onboardingDescription"
+        android:layout_marginTop="0dp"
+        android:text="Get Start" />
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title and Introductory Paragraph -->
+            <ImageView
+                android:id="@+id/imageViewReligious"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/temple" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:gravity="center"
+                android:text="Sri Lankan Religious Wonders"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/introductionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:justificationMode="inter_word"
+                android:text="Sri Lanka is home to numerous religious sites that reflect its rich cultural and spiritual heritage. These sacred locations are not only important to Sri Lankans but attract pilgrims from around the world. Below are five of the most significant religious places in Sri Lanka."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- 1st Religious Place: Temple of the Tooth (Sri Dalada Maligawa) -->
+            <TextView
+                android:id="@+id/toothTempleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textColor="#FFC107"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:text="Temple of the Tooth (Sri Dalada Maligawa)"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/toothTempleImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Temple of the Tooth"
+                android:src="@drawable/aaa1" />
+
+            <TextView
+                android:id="@+id/toothTempleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="The Temple of the Tooth in Kandy houses the sacred tooth relic of Lord Buddha. It is one of the most important pilgrimage sites for Buddhists and a UNESCO World Heritage Site."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 2nd Religious Place: Anuradhapura -->
+            <TextView
+                android:id="@+id/anuradhapuraTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anuradhapura"
+                android:textStyle="bold"
+                android:layout_marginLeft="105dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/anuradhapuraImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Anuradhapura"
+                android:src="@drawable/anuradhapura" />
+
+            <TextView
+                android:id="@+id/anuradhapuraDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Anuradhapura is an ancient sacred city with many Buddhist temples, stupas, and monasteries. It was the capital of Sri Lanka for over 1,300 years and remains an important religious center."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 3rd Religious Place: Adam's Peak (Sri Pada) -->
+            <TextView
+                android:id="@+id/adamsPeakReligiousTitle"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Adam's Peak (Sri Pada)"
+                android:layout_marginLeft="60dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/adamsPeakReligiousImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Adam's Peak"
+                android:src="@drawable/aaa3" />
+
+            <TextView
+                android:id="@+id/adamsPeakReligiousDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Adam's Peak is a sacred mountain where people of different religious faiths (Buddhists, Hindus, Christians, and Muslims) visit to see the sacred footprint at the summit, believed to be that of Buddha, Shiva, or Adam."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 4th Religious Place: Katharagama -->
+            <TextView
+                android:id="@+id/katharagamaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Katharagama"
+                android:textStyle="bold"
+                android:layout_marginLeft="100dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/katharagamaImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Katharagama"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:src="@drawable/katharagama" />
+
+            <TextView
+                android:id="@+id/katharagamaDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Katharagama is a major pilgrimage site, especially for Hindus, in southern Sri Lanka. It is dedicated to Lord Skanda (Kartikeya), with a beautiful temple complex."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 5th Religious Place: Bellanwila Raja Maha Vihara -->
+            <TextView
+                android:id="@+id/bellanwilaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bellanwila Raja Maha Vihara"
+                android:layout_marginLeft="30dp"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/bellanwilaImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Bellanwila Raja Maha Vihara"
+                android:src="@drawable/aaa5" />
+
+            <TextView
+                android:id="@+id/bellanwilaDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Bellanwila Raja Maha Vihara is a Buddhist temple located in the Colombo district. It is a well-known site for meditation and religious gatherings, with a beautiful and serene environment."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

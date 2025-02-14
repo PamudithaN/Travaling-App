@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".help">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp"
+        android:padding="16dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title and Introductory Paragraph -->
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="25dp"
+                app:srcCompat="@drawable/help" />
+
+            <TextView
+                android:id="@+id/helpSupportTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Help and Support"
+                android:textAlignment="center"
+                android:textColor="#343854"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/helpSupportIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:justificationMode="inter_word"
+                android:text="How can we assist you? Please browse through our FAQs or contact support for further help."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- FAQ Section -->
+
+            <!-- Customer Message Input Section -->
+            <TextView
+                android:id="@+id/messageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Send Us a Message"
+                android:textAlignment="center"
+                android:textColor="#343854"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- EditText for entering customer message -->
+
+            <!-- Button to send the message -->
+            <EditText
+                android:id="@+id/messageInput"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:gravity="top|start"
+                android:hint="Type your message here..."
+                android:inputType="textMultiLine|textCapSentences"
+                android:lineSpacingExtra="4dp"
+                android:maxLines="5"
+                android:padding="16dp"
+                android:scrollbars="vertical" />
+
+            <Button
+                android:id="@+id/sendMessageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#FFC107"
+                android:text="Send Message"
+                android:textColor="#FFFFFF" />
+
+            <!-- FAQ Sections continue here -->
+            <!-- (Your other FAQ and support sections) -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

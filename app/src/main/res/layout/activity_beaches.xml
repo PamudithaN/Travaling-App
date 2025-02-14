@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title and Introductory Paragraph -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/beach" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Sri Lankan Natural Beaches"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/introductionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:justificationMode="inter_word"
+                android:text="Sri Lanka is famous for its pristine beaches, offering soft golden sands, crystal-clear waters, and vibrant marine life. Below are some of the most beautiful and relaxing beaches to visit on the island."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- 1st Beach: Unawatuna Beach -->
+
+            <TextView
+                android:id="@+id/unawatunaBeachTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:textColor="#FFC107"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Unawatuna Beach"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/unawatunaBeachImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Unawatuna Beach"
+                android:src="@drawable/bb1" />
+
+            <TextView
+                android:id="@+id/unawatunaBeachDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Unawatuna Beach is one of the most famous beaches in Sri Lanka. Known for its calm waters and scenic coastline, it's perfect for swimming, snorkeling, and enjoying the laid-back vibe of the area."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 2nd Beach: Mirissa Beach -->
+
+            <TextView
+                android:id="@+id/mirissaBeachTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mirissa Beach"
+                android:textStyle="bold"
+                android:layout_marginLeft="105dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/mirissaBeachImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Mirissa Beach"
+                android:src="@drawable/bb2" />
+
+            <TextView
+                android:id="@+id/mirissaBeachDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Mirissa Beach is famous for its whale-watching tours, beautiful golden sand, and clear blue waters. It's a must-visit spot for beach lovers and water sports enthusiasts."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 3rd Beach: Bentota Beach -->
+
+            <TextView
+                android:id="@+id/bentotaBeachTitle"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Bentota Beach"
+                android:layout_marginLeft="100dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/bentotaBeachImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Bentota Beach"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:src="@drawable/bb3" />
+
+            <TextView
+                android:id="@+id/bentotaBeachDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Bentota Beach is a popular destination for water sports, from jet skiing to windsurfing. The long stretches of sand and turquoise waters make it an ideal place to unwind and enjoy the sun."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 4th Beach: Nilaveli Beach -->
+
+            <TextView
+                android:id="@+id/nilaveliBeachTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Nilaveli Beach"
+                android:layout_marginLeft="100dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/nilaveliBeachImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Nilaveli Beach"
+                android:src="@drawable/bb4"/>
+
+            <TextView
+                android:id="@+id/nilaveliBeachDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Nilaveli Beach is one of Sri Lanka’s most serene and untouched beaches. The shallow waters make it a perfect spot for swimming, and the surrounding area is known for its quiet beauty and peaceful atmosphere."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 5th Beach: Hikkaduwa Beach -->
+
+            <TextView
+                android:id="@+id/hikkaduwaBeachTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hikkaduwa Beach"
+                android:layout_marginLeft="80dp"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hikkaduwaBeachImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Hikkaduwa Beach"
+                android:src="@drawable/aq1"/>
+
+            <TextView
+                android:id="@+id/hikkaduwaBeachDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Hikkaduwa Beach is famous for its vibrant coral reefs and great diving spots. The beach is lively and offers various activities, including surfing and snorkeling."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

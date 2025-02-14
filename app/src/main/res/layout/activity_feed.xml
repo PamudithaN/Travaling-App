@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".FeedbackActivity">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title and introductory paragraph -->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="40dp"
+                app:srcCompat="@drawable/feedback" />
+
+            <TextView
+                android:id="@+id/feedbackTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="We Value Your Feedback"
+                android:textAlignment="center"
+                android:textColor="#343854"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/feedbackIntroText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Your feedback is important to us! Please share your thoughts and suggestions below, and we will make every effort to improve our services."
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:justificationMode="inter_word"/>
+
+            <!-- Feedback message input field -->
+            <EditText
+                android:id="@+id/feedbackMessage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/divider_horizontal_dark"
+                android:gravity="top|start"
+                android:hint="Enter your feedback here..."
+                android:inputType="textMultiLine"
+                android:padding="16dp" />
+
+            <!-- Submit button -->
+            <Button
+                android:id="@+id/submitFeedbackButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Submit Feedback"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FFC107"
+                android:padding="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

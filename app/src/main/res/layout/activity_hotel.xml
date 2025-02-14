@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title and Introductory Paragraph -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/hotel" /> <!-- Custom hotel image -->
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Sri Lankan Hotels"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/introductionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:justificationMode="inter_word"
+                android:text="Sri Lanka offers a wide variety of hotels ranging from luxurious beach resorts to quaint hill-country retreats. Explore some of the best hotels in the country."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- 1st Hotel: Shangri-La Hotel Colombo -->
+
+            <TextView
+                android:id="@+id/shangriLaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textColor="#FFC107"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Shangri-La Hotel Colombo"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shangriLaImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Shangri-La Hotel"
+                android:src="@drawable/ee1" /> <!-- Replace with actual hotel image -->
+
+            <TextView
+                android:id="@+id/shangriLaDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Shangri-La Hotel Colombo offers luxurious accommodation with stunning views of the Indian Ocean. It's a prime destination for those looking for top-tier amenities and elegant comfort."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 2nd Hotel: Cinnamon Grand Colombo -->
+
+            <TextView
+                android:id="@+id/cinnamonGrandTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinnamon Grand Colombo"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/cinnamonGrandImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Cinnamon Grand Colombo"
+                android:src="@drawable/ee2" /> <!-- Replace with actual hotel image -->
+
+            <TextView
+                android:id="@+id/cinnamonGrandDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Cinnamon Grand Colombo is one of the most renowned hotels in Sri Lanka. With its strategic location and luxurious rooms, it's ideal for both business and leisure travelers."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 3rd Hotel: The Fortress Resort & Spa -->
+
+            <TextView
+                android:id="@+id/fortressResortTitle"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="The Fortress Resort and Spa"
+                android:layout_marginLeft="40dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fortressResortImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="The Fortress Resort and Spa"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:src="@drawable/ee3" /> <!-- Replace with actual hotel image -->
+
+            <TextView
+                android:id="@+id/fortressResortDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Located in the south of Sri Lanka, The Fortress Resort and Spa is perfect for those looking to escape to a tranquil, beachside retreat with luxurious amenities and breathtaking views."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 4th Hotel: Anantara Peace Haven Tangalle Resort -->
+
+            <TextView
+                android:id="@+id/anantaraTangalleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Anantara Peace Haven Tangalle Resort"
+                android:layout_marginLeft="30dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/anantaraTangalleImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Anantara Peace Haven Tangalle Resort"
+                android:src="@drawable/ee4" /> <!-- Replace with actual hotel image -->
+
+            <TextView
+                android:id="@+id/anantaraTangalleDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Anantara Peace Haven Tangalle is a luxurious beachfront resort offering a blend of natural beauty, serene atmosphere, and world-class service. It is perfect for those seeking peace and relaxation."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- Add more hotels similarly -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

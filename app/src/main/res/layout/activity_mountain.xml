@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title and Introductory Paragraph -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/mountains" /> <!-- Custom mountains image -->
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Sri Lankan Mountains"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/introductionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:justificationMode="inter_word"
+                android:text="Sri Lanka is known for its breathtaking mountain ranges, offering majestic views, challenging hikes, and rich biodiversity. Explore some of the most stunning mountains on the island."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- 1st Mountain: Adam's Peak -->
+
+            <TextView
+                android:id="@+id/adamsPeakTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:textColor="#FFC107"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Adam's Peak"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/adamsPeakImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Adam's Peak"
+                android:src="@drawable/q1" /> <!-- Replace with actual mountain image -->
+
+            <TextView
+                android:id="@+id/adamsPeakDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Adam's Peak, also known as Sri Pada, is a pilgrimage site and one of Sri Lanka's highest peaks. The summit features a footprint, believed to be that of Lord Buddha, and offers stunning sunrise views."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 2nd Mountain: Knuckles Range -->
+
+            <TextView
+                android:id="@+id/knucklesRangeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Knuckles Range"
+                android:textStyle="bold"
+                android:layout_marginLeft="90dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/knucklesRangeImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Knuckles Range"
+                android:src="@drawable/q2" /> <!-- Replace with actual mountain image -->
+
+            <TextView
+                android:id="@+id/knucklesRangeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="The Knuckles Range is known for its scenic beauty and challenging treks. The range offers breathtaking views, diverse wildlife, and is a UNESCO World Heritage site, making it a must-visit for nature enthusiasts."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 3rd Mountain: Piduruthalagala -->
+
+            <TextView
+                android:id="@+id/piduruthalagalaTitle"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Piduruthalagala"
+                android:layout_marginLeft="90dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/piduruthalagalaImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Piduruthalagala"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:src="@drawable/q3" /> <!-- Replace with actual mountain image -->
+
+            <TextView
+                android:id="@+id/piduruthalagalaDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Piduruthalagala is the tallest mountain in Sri Lanka, located in the central hills. It offers panoramic views of the surrounding countryside and is known for its cool climate and diverse flora."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 4th Mountain: Horton Plains -->
+
+            <TextView
+                android:id="@+id/hortonPlainsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Horton Plains"
+                android:layout_marginLeft="90dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hortonPlainsImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Horton Plains"
+                android:src="@drawable/q4" /> <!-- Replace with actual mountain image -->
+
+            <TextView
+                android:id="@+id/hortonPlainsDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Horton Plains National Park is famous for its cloud forests, scenic viewpoints, and the iconic 'World’s End' cliff. It's an excellent spot for nature walks and experiencing Sri Lanka's rich biodiversity."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

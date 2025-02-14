@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title and Introductory Paragraph -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/naturalplace" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Sri Lankan Natural Wonders"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/introductionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:justificationMode="inter_word"
+                android:text="Sri Lanka is blessed with many natural wonders. From pristine beaches to lush rainforests, and from towering mountains to wildlife-rich national parks, the island is a paradise for nature lovers. Below are five of the most beautiful natural places to visit in Sri Lanka."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- 1st Place: Adam's Peak -->
+
+            <TextView
+                android:id="@+id/adamsPeakTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:textColor="#FFC107"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Adam's Peak"
+                android:textAlignment="center"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/adamsPeakImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Adam's Peak"
+                android:src="@drawable/aa1" />
+
+            <TextView
+                android:id="@+id/adamsPeakDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Adam's Peak is one of Sri Lanka's most iconic and sacred mountains. It attracts pilgrims of all faiths and is famous for the 'Sri Pada' (sacred footprint) found at the summit. Visitors also enjoy breathtaking panoramic views from the top."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                />
+
+            <!-- 2nd Place: Ella Rock -->
+
+            <TextView
+                android:id="@+id/ellaRockTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ella Rock"
+                android:textStyle="bold"
+                android:layout_marginLeft="125dp"
+                android:textColor="#FFC107"
+
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ellaRockImage"
+                android:layout_width="match_parent"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_height="200dp"
+                android:contentDescription="Ella Rock"
+                android:src="@drawable/aa2" />
+
+            <TextView
+                android:id="@+id/ellaRockDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Ella Rock offers some of the best views in Sri Lanka, with its panoramic landscapes of tea plantations, hills, and valleys. A popular trekking spot, it’s ideal for those who enjoy scenic hikes and nature walks."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                />
+
+            <!-- 3rd Place: Horton Plains National Park -->
+
+            <TextView
+                android:id="@+id/hortonPlainsTitle"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Horton Plains National Park"
+                android:layout_marginLeft="40dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/hortonPlainsImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Horton Plains"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:src="@drawable/aa3" />
+
+            <TextView
+                android:id="@+id/hortonPlainsDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Horton Plains is a UNESCO World Heritage Site known for its stunning natural beauty and diverse ecosystems. Popular attractions within the park include the World’s End, a sheer cliff that offers a dramatic view of the surrounding landscapes."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+               />
+
+
+
+            <TextView
+                android:id="@+id/yalaParkTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Yala National Park"
+                android:layout_marginLeft="80dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/yalaParkImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Adam's Peak"
+                android:src="@drawable/aa4"/>
+
+            <TextView
+                android:id="@+id/yalaParkDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Yala National Park is one of the most visited wildlife parks in Sri Lanka, famous for its leopard population. The park is home to a variety of wildlife, including elephants, crocodiles, and a diverse array of birds."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                />
+
+
+            <TextView
+                android:id="@+id/nuwaraEliyaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuwara Eliya"
+                android:layout_marginLeft="110dp"
+                android:textColor="#FFC107"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/nuwaraEliyaImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Adam's Peak"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:src="@drawable/aa5"/>
+
+            <TextView
+                android:id="@+id/nuwaraEliyaDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Nuwara Eliya, also known as 'Little England,' is a charming hill station known for its cool climate and lush green surroundings. Famous for its tea plantations, gardens, and colonial architecture, it is a favorite retreat for nature lovers."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

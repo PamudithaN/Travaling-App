@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <!-- ScrollView to allow scrolling of all content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="15dp">
+
+        <!-- LinearLayout to organize all items vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title and Introductory Paragraph -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/water1" /> <!-- Custom waterfalls image -->
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Sri Lankan Waterfalls"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/introductionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:justificationMode="inter_word"
+                android:text="Sri Lanka is home to a number of stunning waterfalls, scattered across the island's lush landscapes. Explore some of the most breathtaking waterfalls that are famous for their beauty and serene surroundings."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <!-- 1st Waterfall: Ravana Falls -->
+
+            <TextView
+                android:id="@+id/ravanaFallsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:textColor="#FFC107"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Ravana Falls"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ravanaFallsImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Ravana Falls"
+                android:src="@drawable/r1" /> <!-- Replace with actual waterfall image -->
+
+            <TextView
+                android:id="@+id/ravanaFallsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Ravana Falls, located near Ella, is one of Sri Lanka's most iconic waterfalls. With its beautiful cascading waters and surrounding greenery, it is a must-visit destination for nature lovers and photographers."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 2nd Waterfall: Bambarakanda Falls -->
+
+            <TextView
+                android:id="@+id/bambarakandaFallsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bambarakanda Falls"
+                android:textStyle="bold"
+                android:layout_marginLeft="80dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/bambarakandaFallsImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:contentDescription="Bambarakanda Falls"
+                android:src="@drawable/r2" /> <!-- Replace with actual waterfall image -->
+
+            <TextView
+                android:id="@+id/bambarakandaFallsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:text="Bambarakanda Falls is the tallest waterfall in Sri Lanka, standing at an impressive 263 meters. It's a stunning sight in the central highlands, surrounded by forests and a peaceful environment."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 3rd Waterfall: Diyaluma Falls -->
+
+            <TextView
+                android:id="@+id/diyalumaFallsTitle"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Diyaluma Falls"
+                android:layout_marginLeft="100dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/diyalumaFallsImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Diyaluma Falls"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:src="@drawable/r3" /> <!-- Replace with actual waterfall image -->
+
+            <TextView
+                android:id="@+id/diyalumaFallsDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="Diyaluma Falls, located in the Badulla District, is one of the most famous waterfalls in Sri Lanka. It is known for its multi-tiered cascade and scenic surroundings, making it a popular spot for trekking."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <!-- 4th Waterfall: St. Clair's Falls -->
+
+            <TextView
+                android:id="@+id/stClairsFallsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="St. Clair's Falls"
+                android:layout_marginLeft="100dp"
+                android:textColor="#FFC107"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:gravity="center"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/stClairsFallsImage"
+                app:shapeAppearanceOverlay="@style/roundimageview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="St. Clair's Falls"
+                android:src="@drawable/r4" /> <!-- Replace with actual waterfall image -->
+
+            <TextView
+                android:id="@+id/stClairsFallsDescription"
+                android:layout_width="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="St. Clair's Falls is known as the 'Little Niagara of Sri Lanka.' Located in the Nuwara Eliya District, this waterfall is a popular tourist attraction, offering a picturesque view amidst lush greenery."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
